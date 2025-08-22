@@ -45,6 +45,7 @@ body {
   transition: transform 0.2s;
   font-weight: bold;
 }
+
 .btn:hover {
   transform: scale(1.1);
   box-shadow: 0 0 15px #00ffcc;
@@ -102,6 +103,17 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 0 10px #6600ff;
   transition: width 1s ease-in-out;
+  animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px #6600ff;
+  }
+
+  to {
+    box-shadow: 0 0 20px #00ffcc;
+  }
 }
 
 /* Cards */
@@ -119,6 +131,7 @@ h2 {
   width: 250px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 0 20px #00ffcc;
@@ -133,6 +146,11 @@ footer {
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
