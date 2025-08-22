@@ -3,53 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sohaib's Portfolio RPG</title>
+  <title>Sohaib's Game Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Game-like Header -->
-  <header class="game-header">
-    <h1>🎮 Welcome to <span>Sohaib's Quest</span></h1>
-    <p>Level 99 Game Developer | Backend Wizard | Unity Hero</p>
+  <!-- HUD Style Navigation -->
+  <nav class="hud-nav">
+    <h1>⚡ Sohaib</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#quests">Quests</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h2>Welcome to My Arena</h2>
+      <p>Game Developer | Unity Engineer | Backend Wizard</p>
+      <button onclick="scrollToSection('quests')">Enter Quest Log</button>
+    </div>
   </header>
 
-  <!-- Character Card -->
-  <section id="hero-card">
-    <img src="assets/avatar.png" alt="Hero Avatar" class="avatar">
-    <div class="stats">
-      <h2>🧑 Character: Sohaib</h2>
-      <p>Class: Game Dev</p>
-      <p>Special Powers: Unity • C# • APIs • AWS</p>
-      <p>HP ❤️: 100/100</p>
-      <p>XP ⭐: 9000+</p>
+  <!-- About Section -->
+  <section id="about">
+    <h2>Player Profile</h2>
+    <div class="card">
+      <p>🎮 Passionate developer with expertise in Unity, C#, and scalable backend systems. 
+      I build games that are fun, engaging, and technically solid.</p>
     </div>
   </section>
 
-  <!-- Quest Log (Projects) -->
+  <!-- Projects / Quest Log -->
   <section id="quests">
-    <h2>📜 Quest Log</h2>
-    <div class="quest">
-      <h3>⚔️ Ball Blaster</h3>
-      <p>A casual shooter game with weapon upgrade system.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.mostaddictivegames.ballblaster" target="_blank">▶ Play Quest</a>
-    </div>
-    <div class="quest">
-      <h3>🏹 Deer Hunting Sniper</h3>
-      <p>A realistic hunting game with an action camera system.</p>
-      <a href="https://play.google.com/store/apps/details?id=com.appslogix.deerhunting.sniper.jungle" target="_blank">▶ Play Quest</a>
+    <h2>Quest Log</h2>
+    <div class="quest-grid">
+      <div class="quest-card">
+        <h3>Ball Blaster</h3>
+        <p>Arcade shooter with weapon upgrade system.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.mostaddictivegames.ballblaster" target="_blank">▶ Play</a>
+      </div>
+      <div class="quest-card">
+        <h3>Deer Hunting Sniper</h3>
+        <p>Immersive hunting game with action camera system.</p>
+        <a href="https://play.google.com/store/apps/details?id=com.appslogix.deerhunting.sniper.jungle" target="_blank">▶ Play</a>
+      </div>
     </div>
   </section>
 
-  <!-- Contact / NPC Section -->
+  <!-- Contact -->
   <section id="contact">
-    <h2>🤝 Talk to NPC (Contact)</h2>
+    <h2>Connect with Me</h2>
     <p>Email: <a href="mailto:your.email@gmail.com">your.email@gmail.com</a></p>
     <p>GitHub: <a href="https://github.com/SohaibIR" target="_blank">github.com/SohaibIR</a></p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Sohaib Shabbir | Made with ❤️ + 🎮</p>
+    <p>© 2025 Sohaib Shabbir | Powered by ⚡ Neon Energy</p>
   </footer>
 
   <script src="script.js"></script>

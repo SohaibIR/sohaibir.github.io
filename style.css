@@ -1,86 +1,141 @@
-body {
+/* General */
+* {
   margin: 0;
   padding: 0;
-  font-family: 'Press Start 2P', cursive, monospace;
-  background: url("https://i.ibb.co/4fMbL9y/pixel-bg.png") repeat;
-  color: #fff;
-  text-align: center;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Orbitron', sans-serif;
+  background: #0d0d0d;
+  color: #eee;
+  line-height: 1.6;
 }
 
-/* Retro header */
-.game-header {
+/* Navigation */
+.hud-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
   background: #111;
-  padding: 30px;
-  border-bottom: 3px solid #0f0;
+  border-bottom: 2px solid #0ff;
+  box-shadow: 0 0 10px #0ff;
 }
-.game-header h1 span {
-  color: #0f0;
-}
-.game-header p {
+.hud-nav h1 {
   color: #0ff;
 }
-
-/* Character Card */
-#hero-card {
+.hud-nav ul {
+  list-style: none;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 40px;
   gap: 20px;
 }
-.avatar {
-  width: 120px;
-  height: 120px;
-  border: 3px solid #fff;
-  border-radius: 8px;
+.hud-nav a {
+  text-decoration: none;
+  color: #eee;
+  transition: 0.3s;
 }
-.stats {
-  background: rgba(0,0,0,0.7);
-  padding: 15px;
-  border: 2px solid #0f0;
-  border-radius: 8px;
+.hud-nav a:hover {
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
 }
 
-/* Quest Log */
-#quests {
-  margin: 40px;
+/* Hero Section */
+.hero {
+  height: 90vh;
+  background: url("https://i.ibb.co/5KdgW1F/cyberpunk-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-.quest {
-  background: rgba(0,0,0,0.8);
+.hero .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: #0ff;
+}
+.hero-content h2 {
+  font-size: 3rem;
+  text-shadow: 0 0 15px #0ff;
+}
+.hero-content button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: transparent;
+  border: 2px solid #0ff;
+  color: #0ff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hero-content button:hover {
+  background: #0ff;
+  color: #000;
+  box-shadow: 0 0 20px #0ff;
+}
+
+/* Sections */
+section {
+  padding: 60px 40px;
+  text-align: center;
+}
+h2 {
+  margin-bottom: 20px;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff;
+}
+
+/* Cards */
+.card, .quest-card {
+  background: rgba(20,20,20,0.9);
+  border: 2px solid #0ff;
   padding: 20px;
-  margin: 15px auto;
-  max-width: 500px;
-  border: 2px solid #ff0;
-  border-radius: 8px;
+  border-radius: 12px;
+  margin: 20px auto;
+  max-width: 600px;
+  box-shadow: 0 0 15px #0ff;
 }
-.quest a {
+
+/* Quest Grid */
+.quest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.quest-card a {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 15px;
-  background: #ff0;
-  color: #000;
+  border: 2px solid #ff0080;
+  color: #ff0080;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: transform 0.2s;
+  transition: 0.3s;
 }
-.quest a:hover {
-  transform: scale(1.1);
+.quest-card a:hover {
+  background: #ff0080;
+  color: #fff;
+  box-shadow: 0 0 15px #ff0080;
 }
 
 /* Contact */
-#contact {
-  background: rgba(0,0,0,0.7);
-  margin: 30px;
-  padding: 20px;
-  border: 2px solid #0ff;
-  border-radius: 8px;
+#contact p a {
+  color: #0ff;
+  text-decoration: none;
+}
+#contact p a:hover {
+  text-shadow: 0 0 10px #0ff;
 }
 
 /* Footer */
 footer {
   background: #111;
   padding: 20px;
-  border-top: 2px solid #0f0;
-  margin-top: 40px;
+  border-top: 2px solid #0ff;
+  text-align: center;
+  box-shadow: 0 -2px 10px #0ff;
 }
