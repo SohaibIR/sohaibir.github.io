@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sohaib's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Hi, I'm Sohaib 👋</h1>
+    <p>Game Developer | Unity | Backend Engineer</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m a passionate developer with experience in Unity, C#, and backend APIs. 
+    I love building games and scalable systems.</p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project">
+      <h3>Ball Blaster</h3>
+      <p>Casual shooter game with weapon upgrade system.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.mostaddictivegames.ballblaster" target="_blank">View on Play Store</a>
+    </div>
+    <div class="project">
+      <h3>Deer Hunting Sniper</h3>
+      <p>Realistic hunting game with action camera system.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.appslogix.deerhunting.sniper.jungle" target="_blank">View on Play Store</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:your.email@gmail.com">your.email@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Sohaib Shabbir</p>
+  </footer>
+</body>
+</html>
