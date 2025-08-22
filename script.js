@@ -1,8 +1,14 @@
-// Example: Smooth scroll effect
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href"))
-      .scrollIntoView({ behavior: "smooth" });
-  });
-});
+// Tiny effect: typewriter intro
+const header = document.querySelector(".game-header h1");
+let text = header.innerText;
+let i = 0;
+header.innerText = "";
+
+function typeWriter() {
+  if (i < text.length) {
+    header.innerText += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 80);
+  }
+}
+typeWriter();
