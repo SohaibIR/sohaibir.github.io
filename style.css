@@ -63,6 +63,47 @@ h2 {
   text-shadow: 0 0 10px #ff0066;
 }
 
+.skills {
+  padding: 60px 20px;
+  background: #0f0f0f;
+  text-align: center;
+}
+
+.skills h2 {
+  font-size: 2rem;
+  color: #ff0066;
+  margin-bottom: 30px;
+  text-shadow: 0 0 10px #ff0066;
+}
+
+.skill {
+  margin: 20px auto;
+  max-width: 500px;
+  text-align: left;
+}
+
+.skill p {
+  margin: 5px 0;
+  font-weight: bold;
+  color: #e0e0e0;
+}
+
+.progress {
+  width: 100%;
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 12px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #00ffcc, #6600ff);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #6600ff;
+  transition: width 1s ease-in-out;
+}
+
 /* Cards */
 .cards {
   display: flex;
